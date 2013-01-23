@@ -22,7 +22,7 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -32,6 +32,7 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
+                    <a class="brand" href="">CandyCam M Hub</a>
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -39,7 +40,8 @@
                     </a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="#top">Home</a></li>
+                            <li><a href="#about">About</a></li>
                             <li><a href="#projects">Active Projects</a></li>
                             <li><a href="#projects">Journal Archive</a></li>
                             <li class="dropdown">
@@ -69,76 +71,73 @@
         </div>
 
         <!-- Main hero unit for a primary marketing message or call to action -->
-        <div class="jumbotron subhead">
+        <div id="top" class="jumbotron subhead">
             <div class="container">
                 <h1>Welcome to the M.</h1>
                 <p>This hub is a central location for CandyCam's marketing, experience, and image endeavors, including reference and resource materials. It serves as a way to keep us sane and organized.</p>
-                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
             </div>
         </div>
+        <span class="candystripe"></span>
 
         <div class="container">
-
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-               </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="row">
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-               </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-            </div>
-
-            <hr>
-            
-            <div class="row">
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-               </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-            </div>
-
-            <hr>
+            <section id="about">
+                <article>
+                    <h1 class="sectionTitle">About the Department</h1>
+                    <p>Nam fringilla elit at justo scelerisque in faucibus nisl varius. Fusce venenatis elementum risus. Nulla facilisi. Aenean purus orci, bibendum sit amet dapibus sed, consequat eu nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam auctor tortor sit amet orci condimentum molestie. Nunc vel sapien arcu, ut scelerisque risus. Vivamus sodales ligula sit amet metus blandit non rhoncus risus molestie. Integer volutpat rutrum cursus. Duis pretium, lorem id elementum iaculis, leo erat mattis ipsum, sed euismod quam sapien eu orci. Fusce libero nulla, semper vel aliquet ut, ornare quis massa. Mauris ut orci turpis, ut fringilla est. Aenean molestie, felis vitae pretium ornare, tellus augue tincidunt mi, a commodo lectus tellus id tortor. Nulla facilisi.</p>
+                </article>
+            </section>
+            <section id="projects" class="row">
+                <article class="span12">
+                    <h1 class="sectionTitle">Current Projects</h1>
+                    <p>This is a visual progress overview of the various projects that the marketing department is currently pursuing.</p>
+                </article>
+                <article class="project span4">
+                    <h1 class="proj_title">Scenario Profiles</h1>
+                    <p>This is a short description of the project and why anyone should care about it or why it's valuable.</p>
+                    <div class="proj_Progress proj_uscenario">
+                        <h1>Total Progress</h1>
+                        <span class="proj_totalProgress bargraph"></span>
+                        <ul>
+                            <li class="proj_subItem projID_wedding0">
+                                <h1>The Wedding</h1>
+                                <span class="bargraph"></span>
+                            </li>
+                            <li class="proj_subItem projID_concert0">
+                                <h1>The Concert</h1>
+                                <span class="bargraph"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project span4">
+                    <h1 class="proj_title">User Personas</h1>
+                    <p>This is a short description of the project and why anyone should care about it or why it's valuable.</p>
+                    <div class="proj_Progress proj_upersona">
+                        <h1>Total Progress</h1>
+                        <span class="proj_totalProgress bargraph null"></span>
+                        <ul>
+                            <li class="proj_subItem">
+                                <h1>The Master Videographer</h1>
+                                <span class="bargraph null"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project span4">
+                    <h1 class="proj_title">Voice Canon</h1>
+                    <p>This is a short description of the project and why anyone should care about it or why it's valuable.</p>
+                    <div class="proj_Progress proj_vcanon">
+                        <h1>Total Progress</h1>
+                        <span class="proj_totalProgress bargraph null"></span>
+                        <ul>
+                            <li class="proj_subItem">
+                                <h1>Draft 1</h1>
+                                <span class="bargraph null"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
 
             <footer>
                 <p>&copy; Company 2012</p>
